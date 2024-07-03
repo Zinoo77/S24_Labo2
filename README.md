@@ -1,1 +1,2 @@
-# S24_Labo2
+# S25_Lab2
+Pratique ZombieParty JQuery et Ajax
