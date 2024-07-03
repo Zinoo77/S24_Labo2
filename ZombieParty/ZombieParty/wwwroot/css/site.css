@@ -79,3 +79,10 @@ body {
 label {
   font-size: 1rem;
 }
+
+.highlight {
+    background: DarkViolet;
+    opacity: 0.5;
+    color: white;
+}
+

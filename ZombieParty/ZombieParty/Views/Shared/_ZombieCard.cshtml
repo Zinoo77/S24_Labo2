@@ -3,6 +3,9 @@
 <div class="col-lg-4 col-md-6 pb-4">
     <div class="card border-primary rounded shadow-sm" style="background: url('/images/imagesLayout/fond.png');">
         <div class="card-body px-3 pt-3 pb-1 row">
+            <div class="position-absolute">
+                <a class="Favorite @(Model.IsFavorite ? "text-primary": "text-dark")" data-id="@(Model.Id)><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
             <p class="card-title text-center text-warning h5"><b>@Model.Name</b></p>
         </div>
         <img class="card-img-top img-fluid d-block mx-auto mb-3" src="@AppConstants.ImagePathViewsZombies@(string.IsNullOrWhiteSpace(Model.Image) ? AppConstants.ImageGeneric : Model.Image)" alt="Zombie photo" style="width:85%">

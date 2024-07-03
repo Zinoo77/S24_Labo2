@@ -28,6 +28,9 @@ namespace ZombieParty.Models
         [ValidateNever]
         public string Image{ get; set; } = "";
 
+
+        public bool IsFavorite { get; set; }
+
         // FACULTATIF on peut formellement identifier le champ lien
         // sinon le champ de foreignKey sera auto généré dans la BD
         [Display(Name = "ZombieType")]
